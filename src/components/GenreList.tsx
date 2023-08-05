@@ -44,7 +44,9 @@ const GenreList = ({ onSelectGenre, selectedGenre }: Props) => {
               fontSize="lg"
               variant="link"
             >
-              {genre.name}
+              {genre.name === "Massively Multiplayer"
+                ? "Multiplayer"
+                : genre.name}
             </Button>
           </HStack>
         </ListItem>
